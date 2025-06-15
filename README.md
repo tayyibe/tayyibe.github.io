@@ -1,2 +1,0 @@
-# tayyibe.github.io
-Tayyibe
