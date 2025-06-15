@@ -3,21 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Biomedical Science & Computer Science Professional</title>
+    <title>Tayyibe Kansoy - CV - Biomedical Science </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body class="bg-gray-50">
-    <!-- PDF Download Button -->
-    <div class="max-w-4xl mx-auto mt-4 mb-4 text-right px-4">
-        <button onclick="generatePDF()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2 ml-auto">
-            <i class="fas fa-file-pdf"></i>
-            Download PDF
-        </button>
-    </div>
-    
-    <div id="cv-content" class="max-w-4xl mx-auto bg-white shadow-lg">
+    <div id="cv-content" class="max-w-4xl mx-auto bg-white shadow-lg mt-4">
         <!-- Header Section -->
         <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
             <h1 class="text-4xl font-bold mb-2">Your Name</h1>
@@ -33,10 +25,16 @@
         <div class="p-8">
             <!-- Education Section -->
             <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>
-                    EDUCATION
-                </h2>
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>
+                        EDUCATION
+                    </h2>
+                    <button onclick="generatePDF()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2 text-sm">
+                        <i class="fas fa-file-pdf"></i>
+                        Download PDF
+                    </button>
+                </div>
                 
                 <div class="space-y-4">
                     <div class="border-l-4 border-blue-600 pl-4">
@@ -195,13 +193,36 @@
                             Programming & Statistical
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">R</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Haskell</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">LaTeX</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">SQL</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">C/C++</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fab fa-python"></i> Python
+                            </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fab fa-r-project"></i> R
+                            </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-code"></i> Haskell
+                            </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-superscript"></i> LaTeX
+                            </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-database"></i> SQL
+                            </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-copyright"></i> C/C++
+                            </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fab fa-microsoft"></i> C#
+                            </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fab fa-java"></i> Java
+                            </span>
+                          
+                           
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fab fa-php"></i> PHP
+                            </span>
+                           
                         </div>
                     </div>
                     
@@ -211,10 +232,18 @@
                             Bioinformatics & Data Analysis
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">NGS Data Analysis</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Single Cell Genomics</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Multi-omics Analysis</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Sequencing Data</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-dna"></i> NGS Data Analysis
+                            </span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-microscope"></i> Single Cell Genomics
+                            </span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-chart-line"></i> Multi-omics Analysis
+                            </span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm flex items-center gap-1">
+                                <i class="fas fa-stream"></i> Sequencing Data
+                            </span>
                         </div>
                     </div>
                 </div>
