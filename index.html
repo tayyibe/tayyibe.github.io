@@ -3,109 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tayyibe Kansoy - CV - Biomedical Science </title>
+    <title>CV - Biomedical Science & Computer Science Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        /* Professional CV font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        }
+        
+        /* Custom color for header */
+        .header-purple {
+            background: linear-gradient(to right, #3C1053, #5A1B7D);
+        }
+        
+        /* Reduce margins and spacing for better page utilization */
+        .compact-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Ensure proper PDF page breaks */
+        @media print {
+            .avoid-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
-    <div id="cv-content" class="max-w-4xl mx-auto bg-white shadow-lg mt-4">
+    <div id="cv-content" class="max-w-4xl mx-auto bg-white shadow-lg">
         <!-- Header Section -->
-        <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+        <header class="header-purple text-white p-6">
             <h1 class="text-4xl font-bold mb-2">Tayyibe Kansoy</h1>
-            <p class="text-xl mb-4">Ph.D. Candidate in Biomedical Science | Computer Science Professional</p>
+            <p class="text-xl mb-3">Ph.D. Candidate in Biomedical Science | Warwick Medical School</p>
             <div class="flex flex-wrap gap-6 text-sm">
-                <span><i class="fas fa-envelope mr-2"></i>your.email@example.com</span>
-                <span><i class="fas fa-phone mr-2"></i>+44 1234 567890</span>
+                <span><i class="fas fa-envelope mr-2"></i>tayyibekansoy@gmail.com</span>
+                <span><i class="fas fa-phone mr-2"></i>07394130235</span>
                 <span><i class="fas fa-map-marker-alt mr-2"></i>Coventry, United Kingdom</span>
-                <span><i class="fab fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/yourprofile" class="text-white hover:underline">linkedin.com/in/yourprofile</a></span>
+                <span><i class="fab fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/tayyibekansoy" class="text-white hover:underline">tayyibekansoy</a></span>
             </div>
         </header>
 
-        <div class="p-8">
+        <div class="p-6">
             <!-- Education Section -->
-            <section class="mb-8">
-                <div class="flex justify-between items-center mb-4">
+            <section class="compact-section">
+                <div class="flex justify-between items-center mb-3">
                     <h2 class="text-2xl font-bold text-gray-800 flex items-center">
-                        <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>
+                        <i class="fas fa-graduation-cap mr-3" style="color: #3C1053;"></i>
                         EDUCATION
                     </h2>
-                    <button onclick="generatePDF()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2 text-sm">
+                    <button onclick="generatePDF()" class="bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2 text-sm" style="background-color: #3C1053;">
                         <i class="fas fa-file-pdf"></i>
                         Download PDF
                     </button>
                 </div>
                 
-                <div class="space-y-4">
-                    <div class="border-l-4 border-blue-600 pl-4">
+                <div class="space-y-3">
+                    <div class="border-l-4 pl-4" style="border-color: #3C1053;">
                         <div class="flex justify-between items-start">
                             <div>
                                 <h3 class="font-bold text-lg text-gray-800">Ph.D. in Interdisciplinary Biomedical Science</h3>
                                 <p class="text-gray-600">Warwick Medical School, University of Warwick, Coventry, UK</p>
                                 <p class="text-sm text-gray-500 mt-1">Working Thesis: Epigenome-guided Cell Sorting for Immune Cell</p>
                             </div>
-                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">Dec 2019 - Present</span>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">2020 - Present</span>
                         </div>
                     </div>
 
-                    <div class="border-l-4 border-blue-500 pl-4">
+                    <div class="border-l-4 pl-4" style="border-color: #5A1B7D;">
                         <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="font-bold text-lg text-gray-800">MSc in Computer Science</h3>
+                                <h3 class="font-bold text-lg text-gray-800">MSc in Computer Science - Distinction in Dissertation</h3>
                                 <p class="text-gray-600">University of Nottingham, Nottingham, UK</p>
                                 <p class="text-sm text-gray-500 mt-1">Dissertation: Algorithmic Puzzles in Haskell</p>
                                 <p class="text-sm text-gray-500">Highlights: Advanced Algorithms, Functional Programming, Machine Learning</p>
                             </div>
-                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">Sep 2015 - Sep 2017</span>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">2017</span>
                         </div>
                     </div>
 
-                    <div class="border-l-4 border-blue-400 pl-4">
+                    <div class="border-l-4 pl-4" style="border-color: #7A2E9D;">
                         <div class="flex justify-between items-start">
                             <div>
                                 <h3 class="font-bold text-lg text-gray-800">Diploma in English for Academic Purposes</h3>
                                 <p class="text-gray-600">Colchester Institute, Colchester, UK</p>
                             </div>
-                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">July 2014</span>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">2014</span>
                         </div>
                     </div>
 
-                    <div class="border-l-4 border-blue-300 pl-4">
+                    <div class="border-l-4 pl-4" style="border-color: #9A4EBD;">
                         <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="font-bold text-lg text-gray-800">BSc in Computer Engineering</h3>
+                                <h3 class="font-bold text-lg text-gray-800">BSc in Computer Engineering - First Class Honours</h3>
                                 <p class="text-gray-600">Kocaeli University, Kocaeli, Turkey</p>
                                 <p class="text-sm text-gray-500 mt-1">First Class Honours</p>
                             </div>
-                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">July 2012</span>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">2012</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Employment Section -->
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <i class="fas fa-briefcase text-blue-600 mr-3"></i>
+            <section class="compact-section avoid-break">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3 flex items-center">
+                    <i class="fas fa-briefcase mr-3" style="color: #3C1053;"></i>
                     EMPLOYMENT & INTERNSHIP
                 </h2>
                 
-                <div class="space-y-4">
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="space-y-3">
+                    <div class="bg-gray-50 p-3 rounded-lg">
                         <div class="flex justify-between items-start mb-2">
                             <div>
                                 <h3 class="font-bold text-gray-800">Software Developer</h3>
                                 <p class="text-gray-600">AD Software Company, Kocaeli, Turkey</p>
                             </div>
-                            <span class="text-sm text-gray-500">Jun - Sep 2012</span>
+                            <span class="text-sm text-gray-500">May - October 2012</span>
                         </div>
                         <ul class="text-sm text-gray-600 space-y-1">
-                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Developed a customer management module in ASP.NET and SQL Server</li>
-                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Collaborated with a team of five to deliver client-specific feature enhancements</li>
+                            <li class="flex items-start"><i class="fas fa-chevron-right mr-2 mt-1 text-xs" style="color: #3C1053;"></i>Developed a customer management module in ASP.NET and SQL Server</li>
+                            <li class="flex items-start"><i class="fas fa-chevron-right mr-2 mt-1 text-xs" style="color: #3C1053;"></i>Collaborated with a team of five to deliver client-specific feature enhancements</li>
                         </ul>
                     </div>
 
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="bg-gray-50 p-3 rounded-lg">
                         <div class="flex justify-between items-start mb-2">
                             <div>
                                 <h3 class="font-bold text-gray-800">Software Developer</h3>
@@ -114,11 +139,11 @@
                             <span class="text-sm text-gray-500">Jun - Aug 2011</span>
                         </div>
                         <ul class="text-sm text-gray-600">
-                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Implemented GIS data visualization tools in C for urban planning department</li>
+                            <li class="flex items-start"><i class="fas fa-chevron-right mr-2 mt-1 text-xs" style="color: #3C1053;"></i>Implemented GIS data visualization tools in C for urban planning department</li>
                         </ul>
                     </div>
 
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="bg-gray-50 p-3 rounded-lg">
                         <div class="flex justify-between items-start mb-2">
                             <div>
                                 <h3 class="font-bold text-gray-800">Software Developer</h3>
@@ -127,22 +152,22 @@
                             <span class="text-sm text-gray-500">Jul - Aug 2010</span>
                         </div>
                         <ul class="text-sm text-gray-600">
-                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Developed a web-based compliance tracking system using JSP and MySQL</li>
+                            <li class="flex items-start"><i class="fas fa-chevron-right mr-2 mt-1 text-xs" style="color: #3C1053;"></i>Developed a web-based compliance tracking system using JSP and MySQL</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Presentations Section -->
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <i class="fas fa-presentation-screen text-blue-600 mr-3"></i>
+            <!-- Presentations Section - This should start on page 2 -->
+            <section class="compact-section page-break-before">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3 flex items-center">
+                    <i class="fas fa-presentation-screen mr-3" style="color: #3C1053;"></i>
                     POSTER & ORAL PRESENTATIONS
                 </h2>
                 
                 <div class="space-y-3">
                     <div class="flex items-start">
-                        <i class="fas fa-file-powerpoint text-blue-500 mr-3 mt-1"></i>
+                        <i class="fas fa-file-powerpoint mr-3 mt-1" style="color: #5A1B7D;"></i>
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800">Epigenome Informed Cell Sorting of Immune Cells</h3>
                             <p class="text-sm text-gray-600">Poster - Warwick-Cambridge Symposium on Quantitative Cell Biology, Coventry, UK</p>
@@ -151,7 +176,7 @@
                     </div>
 
                     <div class="flex items-start">
-                        <i class="fas fa-microphone text-blue-500 mr-3 mt-1"></i>
+                        <i class="fas fa-microphone mr-3 mt-1" style="color: #5A1B7D;"></i>
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800">Epigenetic Codes of Immunosuppression</h3>
                             <p class="text-sm text-gray-600">Oral Presentation - Warwick Medical School Symposium, Coventry, UK</p>
@@ -160,7 +185,7 @@
                     </div>
 
                     <div class="flex items-start">
-                        <i class="fas fa-file-powerpoint text-blue-500 mr-3 mt-1"></i>
+                        <i class="fas fa-file-powerpoint mr-3 mt-1" style="color: #5A1B7D;"></i>
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800">Epigenetic Codes of Immunosuppression</h3>
                             <p class="text-sm text-gray-600">Poster - Single-Cell Cancer Biology Gordon Research Conference, Boston, USA</p>
@@ -169,7 +194,7 @@
                     </div>
 
                     <div class="flex items-start">
-                        <i class="fas fa-file-powerpoint text-blue-500 mr-3 mt-1"></i>
+                        <i class="fas fa-file-powerpoint mr-3 mt-1" style="color: #5A1B7D;"></i>
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800">Epigenetic Codes of Immunosuppression</h3>
                             <p class="text-sm text-gray-600">Poster - Warwick Medical School Symposium, Coventry, UK</p>
@@ -181,54 +206,48 @@
 
             <!-- Skills Section -->
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <i class="fas fa-code text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3 flex items-center">
+                    <i class="fas fa-code mr-3" style="color: #3C1053;"></i>
                     LANGUAGES & COMPUTER SKILLS
                 </h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                            <i class="fas fa-laptop-code text-blue-500 mr-2"></i>
+                            <i class="fas fa-laptop-code mr-2" style="color: #5A1B7D;"></i>
                             Programming & Statistical
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
                                 <i class="fab fa-python"></i> Python
                             </span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
                                 <i class="fab fa-r-project"></i> R
                             </span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
                                 <i class="fas fa-code"></i> Haskell
                             </span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
                                 <i class="fas fa-superscript"></i> LaTeX
                             </span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
-                                <i class="fas fa-database"></i> SQL
-                            </span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
-                                <i class="fas fa-copyright"></i> C/C++
-                            </span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
-                                <i class="fab fa-microsoft"></i> C#
-                            </span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
                                 <i class="fab fa-java"></i> Java
                             </span>
-                          
-                           
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm flex items-center gap-1">
-                                <i class="fab fa-php"></i> PHP
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
+                                <i class="fas fa-database"></i> SQL
                             </span>
-                           
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
+                                <i class="fas fa-copyright"></i> C/C++
+                            </span>
+                            <span class="px-3 py-1 rounded-full text-sm flex items-center gap-1" style="background-color: #F3E5F5; color: #3C1053;">
+                                <i class="fab fa-microsoft"></i> C#
+                            </span>
                         </div>
                     </div>
                     
                     <div>
                         <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                            <i class="fas fa-dna text-blue-500 mr-2"></i>
+                            <i class="fas fa-dna mr-2" style="color: #5A1B7D;"></i>
                             Bioinformatics & Data Analysis
                         </h3>
                         <div class="flex flex-wrap gap-2">
@@ -256,8 +275,8 @@
             // Configure PDF options
             const element = document.getElementById('cv-content');
             const opt = {
-                margin: 0,
-                filename: 'CV_Biomedical_Computer_Science.pdf',
+                margin: [10, 0, 10, 0], // [top, right, bottom, left] - adds 10mm top margin for page breaks
+                filename: 'Tayyibe_Kansoy_CV.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { 
                     scale: 2,
@@ -268,6 +287,12 @@
                     unit: 'mm', 
                     format: 'a4', 
                     orientation: 'portrait' 
+                },
+                pagebreak: { 
+                    mode: ['avoid-all', 'css', 'legacy'],
+                    before: '.page-break-before',
+                    after: '.page-break-after',
+                    avoid: '.avoid-break'
                 }
             };
 
