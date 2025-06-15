@@ -6,9 +6,18 @@
     <title>CV - Biomedical Science & Computer Science Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body class="bg-gray-50">
-    <div class="max-w-4xl mx-auto bg-white shadow-lg">
+    <!-- PDF Download Button -->
+    <div class="max-w-4xl mx-auto mt-4 mb-4 text-right px-4">
+        <button onclick="generatePDF()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2 ml-auto">
+            <i class="fas fa-file-pdf"></i>
+            Download PDF
+        </button>
+    </div>
+    
+    <div id="cv-content" class="max-w-4xl mx-auto bg-white shadow-lg">
         <!-- Header Section -->
         <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
             <h1 class="text-4xl font-bold mb-2">Your Name</h1>
@@ -212,5 +221,30 @@
             </section>
         </div>
     </div>
+
+    <script>
+        function generatePDF() {
+            // Configure PDF options
+            const element = document.getElementById('cv-content');
+            const opt = {
+                margin: 0,
+                filename: 'CV_Biomedical_Computer_Science.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { 
+                    scale: 2,
+                    useCORS: true,
+                    letterRendering: true
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait' 
+                }
+            };
+
+            // Generate and save the PDF
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
 </body>
 </html>
