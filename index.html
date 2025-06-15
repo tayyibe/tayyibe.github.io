@@ -3,424 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Tayyibe Kansoy - Biomedical Science & Computer Science Professional</title>
+    <title>CV - Biomedical Science & Computer Science Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        /* Enhanced mobile styles */
-        @media (max-width: 768px) {
-            .mobile-padding {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-            
-            .mobile-text-sm {
-                font-size: 0.875rem;
-            }
-            
-            .mobile-leading-tight {
-                line-height: 1.25;
-            }
-        }
-        
-        /* Smooth transitions for mobile menu */
-        .mobile-menu-transition {
-            transition: all 0.3s ease-in-out;
-        }
-        
-        /* Better touch targets */
-        .touch-target {
-            min-height: 44px;
-            min-width: 44px;
-        }
-        
-        /* Mobile-first responsive typography */
-        .responsive-title {
-            font-size: 2rem;
-        }
-        
-        @media (min-width: 640px) {
-            .responsive-title {
-                font-size: 2.5rem;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .responsive-title {
-                font-size: 3rem;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .responsive-title {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
-            <div class="flex justify-between items-center">
-                <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 flex items-center">
-                    <i class="fas fa-dna text-blue-600 mr-2"></i>
-                    Tayyibe Kansoy
-                </h1>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-4 lg:space-x-6">
-                    <a href="#about" class="hover:text-blue-600 transition duration-200 px-2 py-1">About</a>
-                    <a href="#education" class="hover:text-blue-600 transition duration-200 px-2 py-1">Education</a>
-                    <a href="#experience" class="hover:text-blue-600 transition duration-200 px-2 py-1">Experience</a>
-                    <a href="#research" class="hover:text-blue-600 transition duration-200 px-2 py-1">Research</a>
-                    <a href="#skills" class="hover:text-blue-600 transition duration-200 px-2 py-1">Skills</a>
-                    <a href="#contact" class="hover:text-blue-600 transition duration-200 px-2 py-1">Contact</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden touch-target flex items-center justify-center" onclick="toggleMobileMenu()">
-                    <i id="menuIcon" class="fas fa-bars text-xl sm:text-2xl"></i>
-                </button>
+<body class="bg-gray-50">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg">
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+            <h1 class="text-4xl font-bold mb-2">Your Name</h1>
+            <p class="text-xl mb-4">Ph.D. Candidate in Biomedical Science | Computer Science Professional</p>
+            <div class="flex flex-wrap gap-6 text-sm">
+                <span><i class="fas fa-envelope mr-2"></i>your.email@example.com</span>
+                <span><i class="fas fa-phone mr-2"></i>+44 1234 567890</span>
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Coventry, United Kingdom</span>
+                <span><i class="fab fa-linkedin mr-2"></i>linkedin.com/in/yourprofile</span>
             </div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 mobile-menu-transition">
-                <div class="flex flex-col space-y-2">
-                    <a href="#about" class="block py-3 px-4 hover:bg-gray-100 hover:text-blue-600 transition duration-200 rounded-md touch-target" onclick="closeMobileMenu()">About</a>
-                    <a href="#education" class="block py-3 px-4 hover:bg-gray-100 hover:text-blue-600 transition duration-200 rounded-md touch-target" onclick="closeMobileMenu()">Education</a>
-                    <a href="#experience" class="block py-3 px-4 hover:bg-gray-100 hover:text-blue-600 transition duration-200 rounded-md touch-target" onclick="closeMobileMenu()">Experience</a>
-                    <a href="#research" class="block py-3 px-4 hover:bg-gray-100 hover:text-blue-600 transition duration-200 rounded-md touch-target" onclick="closeMobileMenu()">Research</a>
-                    <a href="#skills" class="block py-3 px-4 hover:bg-gray-100 hover:text-blue-600 transition duration-200 rounded-md touch-target" onclick="closeMobileMenu()">Skills</a>
-                    <a href="#contact" class="block py-3 px-4 hover:bg-gray-100 hover:text-blue-600 transition duration-200 rounded-md touch-target" onclick="closeMobileMenu()">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+        </header>
 
-    <!-- Hero Section -->
-    <section id="about" class="pt-20 sm:pt-24 pb-8 sm:pb-12 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="responsive-title font-bold mb-4 leading-tight">My name is Tayyibe</h2>
-                <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-4 sm:mb-6 leading-relaxed">I am final year PhD researcher in Biomedical Science at Warwick Medical School - University of Warwick</p>
-                <p class="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-4 sm:px-0">
-                    I am a final year PhD researcher in Biomedical Science at Warwick Medical School - University of Warwick.
-                    My research mainly focuses on epigenome-guided cell sorting for immune cell analysis.
-                </p>
+        <div class="p-8">
+            <!-- Education Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>
+                    EDUCATION
+                </h2>
                 
-                <!-- Action Buttons -->
-                <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4 sm:px-0">
-                    <a href="mailto:tayyibekansoy@gmail.com" class="bg-blue-600 text-white px-6 py-3 sm:py-4 rounded-lg hover:bg-blue-700 transition duration-200 touch-target flex items-center justify-center text-center">
-                        <i class="fas fa-envelope mr-2"></i>Get in Touch
-                    </a>
-                    <a href="https://tayyibe.com/cv.pdf" class="bg-gray-200 text-gray-800 px-6 py-3 sm:py-4 rounded-lg hover:bg-gray-300 transition duration-200 touch-target flex items-center justify-center text-center">
-                        <i class="fas fa-download mr-2"></i>Download CV
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-12 sm:py-16">
-        <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Education</h2>
-            <div class="max-w-4xl mx-auto space-y-4 sm:space-y-6">
-                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-                    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-2 lg:gap-4">
-                        <div class="flex-1">
-                            <h3 class="text-lg sm:text-xl font-semibold text-blue-600 mb-1">Ph.D. in Interdisciplinary Biomedical Science</h3>
-                            <p class="text-gray-600 text-sm sm:text-base mb-2">Warwick Medical School, University of Warwick</p>
-                            <p class="text-gray-500 text-sm sm:text-base italic">Thesis: Epigenome-guided Cell Sorting for Immune Cell</p>
-                        </div>
-                        <span class="text-gray-500 text-sm sm:text-base lg:text-right lg:whitespace-nowrap">Dec 2019 - Present</span>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-                    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-2 lg:gap-4">
-                        <div class="flex-1">
-                            <h3 class="text-lg sm:text-xl font-semibold text-blue-600 mb-1">MSc in Computer Science</h3>
-                            <p class="text-gray-600 text-sm sm:text-base mb-2">University of Nottingham | Distinction in Dissertation</p>
-                            <p class="text-gray-500 text-sm sm:text-base">Key Courses: Advanced Algorithms, Functional Programming, Machine Learning</p>
-                        </div>
-                        <span class="text-gray-500 text-sm sm:text-base lg:text-right lg:whitespace-nowrap">Sep 2015 - Sep 2017</span>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-                    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-2 lg:gap-4">
-                        <div class="flex-1">
-                            <h3 class="text-lg sm:text-xl font-semibold text-blue-600 mb-1">BSc in Computer Engineering</h3>
-                            <p class="text-gray-600 text-sm sm:text-base mb-2">Kocaeli University</p>
-                            <p class="text-gray-500 text-sm sm:text-base">First Class Honours</p>
-                        </div>
-                        <span class="text-gray-500 text-sm sm:text-base lg:text-right lg:whitespace-nowrap">July 2012</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-12 sm:py-16 bg-gray-100">
-        <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Professional Experience</h2>
-            <div class="max-w-4xl mx-auto space-y-4 sm:space-y-6">
-                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-                    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-2 lg:gap-4">
-                        <div class="flex-1">
-                            <h3 class="text-lg sm:text-xl font-semibold mb-1">Software Developer</h3>
-                            <p class="text-blue-600 text-sm sm:text-base mb-3">AD Software Company</p>
-                            <ul class="space-y-2 text-gray-600 text-sm sm:text-base">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-500 mr-2 mt-1 flex-shrink-0"></i>
-                                    <span>Developed customer management module using ASP.NET and SQL Server</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-500 mr-2 mt-1 flex-shrink-0"></i>
-                                    <span>Collaborated with team of five for client-specific enhancements</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <span class="text-gray-500 text-sm sm:text-base lg:text-right lg:whitespace-nowrap">Jun - Sep 2012</span>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-                    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-2 lg:gap-4">
-                        <div class="flex-1">
-                            <h3 class="text-lg sm:text-xl font-semibold mb-1">Software Developer</h3>
-                            <p class="text-blue-600 text-sm sm:text-base mb-3">Mayor of Istanbul (IBB)</p>
-                            <ul class="space-y-2 text-gray-600 text-sm sm:text-base">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-500 mr-2 mt-1 flex-shrink-0"></i>
-                                    <span>Implemented GIS data visualization tools in C for urban planning</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <span class="text-gray-500 text-sm sm:text-base lg:text-right lg:whitespace-nowrap">Jun - Aug 2011</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="py-12 sm:py-16">
-        <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Research Presentations</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-                        <div class="flex items-start mb-3">
-                            <i class="fas fa-atom text-blue-600 text-xl sm:text-2xl mr-3 mt-1 flex-shrink-0"></i>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="font-semibold text-sm sm:text-base mb-1">Epigenome Informed Cell Sorting of Immune Cells</h3>
-                                <p class="text-gray-600 text-xs sm:text-sm">Poster Presentation</p>
-                                <p class="text-gray-500 text-xs sm:text-sm mt-1">Warwick-Cambridge Symposium, March 2024</p>
+                                <h3 class="font-bold text-lg text-gray-800">Ph.D. in Interdisciplinary Biomedical Science</h3>
+                                <p class="text-gray-600">Warwick Medical School, University of Warwick, Coventry, UK</p>
+                                <p class="text-sm text-gray-500 mt-1">Working Thesis: Epigenome-guided Cell Sorting for Immune Cell</p>
                             </div>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">Dec 2019 - Present</span>
                         </div>
                     </div>
-                    
-                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-                        <div class="flex items-start mb-3">
-                            <i class="fas fa-microphone text-green-600 text-xl sm:text-2xl mr-3 mt-1 flex-shrink-0"></i>
+
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="font-semibold text-sm sm:text-base mb-1">Epigenetic Codes of Immunosuppression</h3>
-                                <p class="text-gray-600 text-xs sm:text-sm">Oral Presentation</p>
-                                <p class="text-gray-500 text-xs sm:text-sm mt-1">Warwick Medical School Symposium, May 2023</p>
+                                <h3 class="font-bold text-lg text-gray-800">MSc in Computer Science</h3>
+                                <p class="text-gray-600">University of Nottingham, Nottingham, UK</p>
+                                <p class="text-sm text-gray-500 mt-1">Dissertation: Algorithmic Puzzles in Haskell</p>
+                                <p class="text-sm text-gray-500">Highlights: Advanced Algorithms, Functional Programming, Machine Learning</p>
                             </div>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">Sep 2015 - Sep 2017</span>
                         </div>
                     </div>
-                    
-                    <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200 md:col-span-2">
-                        <div class="flex items-start mb-3">
-                            <i class="fas fa-globe text-purple-600 text-xl sm:text-2xl mr-3 mt-1 flex-shrink-0"></i>
+
+                    <div class="border-l-4 border-blue-400 pl-4">
+                        <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="font-semibold text-sm sm:text-base mb-1">Epigenetic Codes of Immunosuppression</h3>
-                                <p class="text-gray-600 text-xs sm:text-sm">International Poster</p>
-                                <p class="text-gray-500 text-xs sm:text-sm mt-1">Gordon Research Conference, Boston, June 2022</p>
-                                <p class="text-green-600 text-xs sm:text-sm mt-1 font-medium">Funded by Cancer Research UK</p>
+                                <h3 class="font-bold text-lg text-gray-800">Diploma in English for Academic Purposes</h3>
+                                <p class="text-gray-600">Colchester Institute, Colchester, UK</p>
                             </div>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">July 2014</span>
+                        </div>
+                    </div>
+
+                    <div class="border-l-4 border-blue-300 pl-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">BSc in Computer Engineering</h3>
+                                <p class="text-gray-600">Kocaeli University, Kocaeli, Turkey</p>
+                                <p class="text-sm text-gray-500 mt-1">First Class Honours</p>
+                            </div>
+                            <span class="text-sm text-gray-500 whitespace-nowrap ml-4">July 2012</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-12 sm:py-16 bg-gray-100">
-        <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Technical Skills</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            <!-- Employment Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-briefcase text-blue-600 mr-3"></i>
+                    EMPLOYMENT & INTERNSHIP
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-800">Software Developer</h3>
+                                <p class="text-gray-600">AD Software Company, Kocaeli, Turkey</p>
+                            </div>
+                            <span class="text-sm text-gray-500">Jun - Sep 2012</span>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Developed a customer management module in ASP.NET and SQL Server</li>
+                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Collaborated with a team of five to deliver client-specific feature enhancements</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-800">Software Developer</h3>
+                                <p class="text-gray-600">Mayor of Istanbul (IBB), Istanbul, Turkey</p>
+                            </div>
+                            <span class="text-sm text-gray-500">Jun - Aug 2011</span>
+                        </div>
+                        <ul class="text-sm text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Implemented GIS data visualization tools in C for urban planning department</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-800">Software Developer</h3>
+                                <p class="text-gray-600">Turkish Standards Institute (TSE), Kocaeli, Turkey</p>
+                            </div>
+                            <span class="text-sm text-gray-500">Jul - Aug 2010</span>
+                        </div>
+                        <ul class="text-sm text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-chevron-right text-blue-400 mr-2 mt-1 text-xs"></i>Developed a web-based compliance tracking system using JSP and MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Presentations Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-presentation-screen text-blue-600 mr-3"></i>
+                    POSTER & ORAL PRESENTATIONS
+                </h2>
+                
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-file-powerpoint text-blue-500 mr-3 mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-gray-800">Epigenome Informed Cell Sorting of Immune Cells</h3>
+                            <p class="text-sm text-gray-600">Poster - Warwick-Cambridge Symposium on Quantitative Cell Biology, Coventry, UK</p>
+                            <p class="text-xs text-gray-500">March 2024 | Funded by Warwick Medical School</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <i class="fas fa-microphone text-blue-500 mr-3 mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-gray-800">Epigenetic Codes of Immunosuppression</h3>
+                            <p class="text-sm text-gray-600">Oral Presentation - Warwick Medical School Symposium, Coventry, UK</p>
+                            <p class="text-xs text-gray-500">May 2023</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <i class="fas fa-file-powerpoint text-blue-500 mr-3 mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-gray-800">Epigenetic Codes of Immunosuppression</h3>
+                            <p class="text-sm text-gray-600">Poster - Single-Cell Cancer Biology Gordon Research Conference, Boston, USA</p>
+                            <p class="text-xs text-gray-500">June 2022 | Grant from Cancer Research UK, Travel Grant Warwick Medical School</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <i class="fas fa-file-powerpoint text-blue-500 mr-3 mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-gray-800">Epigenetic Codes of Immunosuppression</h3>
+                            <p class="text-sm text-gray-600">Poster - Warwick Medical School Symposium, Coventry, UK</p>
+                            <p class="text-xs text-gray-500">June 2022 | Funded by Warwick PhD Studentship</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-code text-blue-600 mr-3"></i>
+                    LANGUAGES & COMPUTER SKILLS
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-600">Programming Languages</h3>
+                        <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
+                            <i class="fas fa-laptop-code text-blue-500 mr-2"></i>
+                            Programming & Statistical
+                        </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm">Python</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm">R</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm">Haskell</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm">C/C++</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm">C#</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm">SQL</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm">LaTeX</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">R</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Haskell</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">LaTeX</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">SQL</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">C/C++</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">C#</span>
                         </div>
                     </div>
                     
                     <div>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-green-600">Bioinformatics & Analysis</h3>
+                        <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
+                            <i class="fas fa-dna text-blue-500 mr-2"></i>
+                            Bioinformatics & Data Analysis
+                        </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs sm:text-sm">NGS Data Analysis</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs sm:text-sm">Single Cell Genomics</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs sm:text-sm">Multi-omics Analysis</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs sm:text-sm">Sequencing Data</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">NGS Data Analysis</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Single Cell Genomics</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Multi-omics Analysis</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Sequencing Data</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-   
-    <!-- Additional Sections Placeholder -->
-    <!--   <section class="py-12 sm:py-16">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Additional Sections</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                    <div class="bg-blue-50 p-4 sm:p-6 rounded-lg border-2 border-dashed border-blue-300">
-                        <i class="fas fa-trophy text-3xl sm:text-4xl text-blue-600 mb-3"></i>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Awards & Honors</h3>
-                        <p class="text-gray-600 text-sm sm:text-base">Add your academic awards, scholarships, and recognitions here</p>
-                    </div>
-                    
-                    <div class="bg-green-50 p-4 sm:p-6 rounded-lg border-2 border-dashed border-green-300">
-                        <i class="fas fa-book text-3xl sm:text-4xl text-green-600 mb-3"></i>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Publications</h3>
-                        <p class="text-gray-600 text-sm sm:text-base">List your research papers, articles, and conference proceedings</p>
-                    </div>
-                    
-                    <div class="bg-purple-50 p-4 sm:p-6 rounded-lg border-2 border-dashed border-purple-300">
-                        <i class="fas fa-project-diagram text-3xl sm:text-4xl text-purple-600 mb-3"></i>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Projects</h3>
-                        <p class="text-gray-600 text-sm sm:text-base">Showcase your research projects, GitHub repositories, or collaborations</p>
-                    </div>
-                    
-                    <div class="bg-orange-50 p-4 sm:p-6 rounded-lg border-2 border-dashed border-orange-300">
-                        <i class="fas fa-certificate text-3xl sm:text-4xl text-orange-600 mb-3"></i>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Certifications</h3>
-                        <p class="text-gray-600 text-sm sm:text-base">Include relevant professional certifications and online courses</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-12 sm:py-16 bg-gray-800 text-white">
-        <div class="container mx-auto px-4 sm:px-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Get In Touch</h2>
-            <div class="max-w-2xl mx-auto text-center">
-                <p class="mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">I'm always interested in discussing research collaborations, opportunities, and innovative projects at the intersection of computational biology and medicine.</p>
-                <div class="flex justify-center gap-4 sm:gap-6">
-                    <a href="mailto:tayyibekansoy@gmail.com" class="hover:text-blue-400 transition duration-200 touch-target flex items-center justify-center">
-                        <i class="fas fa-envelope text-xl sm:text-2xl"></i>
-                    </a>
-                    <a href="#" class="hover:text-blue-400 transition duration-200 touch-target flex items-center justify-center">
-                        <i class="fab fa-linkedin text-xl sm:text-2xl"></i>
-                    </a>
-                    <a href="#" class="hover:text-blue-400 transition duration-200 touch-target flex items-center justify-center">
-                        <i class="fab fa-github text-xl sm:text-2xl"></i>
-                    </a>
-                    <a href="#" class="hover:text-blue-400 transition duration-200 touch-target flex items-center justify-center">
-                        <i class="fab fa-twitter text-xl sm:text-2xl"></i>
-                    </a>
-                    <a href="#" class="hover:text-blue-400 transition duration-200 touch-target flex items-center justify-center">
-                        <i class="fas fa-graduation-cap text-xl sm:text-2xl"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-4 sm:py-6 bg-gray-900 text-gray-400 text-center">
-        <p class="text-sm sm:text-base">&copy; 2024 Tayyibe Kansoy. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Enhanced mobile menu functionality
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const icon = document.getElementById('menuIcon');
-            
-            menu.classList.toggle('hidden');
-            
-            // Animate icon
-            if (menu.classList.contains('hidden')) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            }
-        }
-        
-        function closeMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const icon = document.getElementById('menuIcon');
-            
-            menu.classList.add('hidden');
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const navHeight = document.querySelector('nav').offsetHeight;
-                    const targetPosition = target.offsetTop - navHeight - 10;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Enhanced scroll effect for navigation
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-lg');
-            } else {
-                nav.classList.remove('shadow-lg');
-            }
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('mobileMenu');
-            const menuButton = event.target.closest('button');
-            
-            if (!menu.contains(event.target) && !menuButton && !menu.classList.contains('hidden')) {
-                closeMobileMenu();
-            }
-        });
-        
-        // Handle window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 768) {
-                closeMobileMenu();
-            }
-        });
-    </script>
+    </div>
 </body>
 </html>
